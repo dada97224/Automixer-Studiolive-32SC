@@ -1,0 +1,25 @@
+{
+  "name": "automixer-studiolive-32sc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automixer local pour PreSonus/Fender StudioLive 32 SC, firmware 2.8.2.103375 uniquement.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/cli.ts",
+    "dump": "tsx src/cli.ts dump",
+    "servir": "tsx src/cli.ts servir"
+  },
+  "dependencies": {
+    "@featherbear/presonus-studiolive-api": "1.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
